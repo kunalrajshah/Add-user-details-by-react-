@@ -15,6 +15,7 @@
   color: black;
   font-weight: bold;
   margin: 2%;
+  cursor: pointer;
 }
 
 .list-user{

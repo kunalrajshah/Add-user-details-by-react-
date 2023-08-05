@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div>
       <Form get={getData} />
-      <Output send={rcvData} />
+      <Output send={rcvData} del={setRcvData} />
     </div>
   );
 };

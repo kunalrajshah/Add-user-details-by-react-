@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import InvalidDiv from "./InvalidDiv";
 
+
 const Form = (props) => {
   const [inputText, setInputText] = useState("");
   const [inputAge, setInputAge] = useState("");
