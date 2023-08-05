@@ -1,0 +1,31 @@
+.container{
+  width: 30%;
+  margin: auto;
+  border: 1px solid red;
+  box-shadow:10px 5px 5px red;
+  padding: 1%;
+  margin-top: 6%;
+  background: rgb(236, 234, 231);
+  border-radius: 6%;
+}
+
+.container input{
+  margin: 1%;
+  margin-left: 0.5%;
+  width:400px;
+}
+
+.container label{
+  font-weight: bold;
+  color: black;
+}
+
+.container button{
+  margin: 1%;
+  cursor: pointer;
+  background-color: purple;
+  color: aliceblue;
+  padding: 1%;
+  border-radius:10%;
+
+}

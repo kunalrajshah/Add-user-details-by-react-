@@ -1,0 +1,18 @@
+.output-container{
+  margin: auto;
+  width: 32%;
+  background: rgb(236, 234, 231);
+  margin-top: 2%;
+  border-radius: 2%;
+  padding: 1%; /* Added padding to give some space inside the container */
+  box-sizing: border-box; 
+}
+
+.list-user li{
+  list-style: none;
+  border: 1px solid red;
+  padding:1%;
+  color: black;
+  font-weight: bold;
+  margin: 2%;
+}
