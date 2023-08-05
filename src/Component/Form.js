@@ -5,6 +5,7 @@ const Form = (props) => {
   // Using ref hook
   const nameInputRef = useRef();
   const AgeInputRef = useRef();
+  const collegeInputRef=useRef();
 
   // const [inputText, setInputText] = useState("");
   // const [inputAge, setInputAge] = useState("");
@@ -22,18 +23,20 @@ const Form = (props) => {
     event.preventDefault();
     const enteredName = nameInputRef.current.value;
     const enteredAge = AgeInputRef.current.value;
+    const enteredCollegeName=collegeInputRef.current.value;
 
     const obj = {
       name: enteredName,
       age: enteredAge,
+      college:enteredCollegeName,
       id: Math.random().toString(),
     };
 
     // Form Validation
-    if (enteredName.trim().length === 0 || enteredAge.trim().length === 0) {
+    if (enteredName.trim().length === 0 || enteredAge.trim().length === 0 || enteredCollegeName.trim().length === 0) {
       setShowInvalidDiv({
         title: "Invalid Input",
-        message: "Please enter a valid name and age (non-empty values)",
+        message: "Please enter a valid name,age and college name (non-empty values)",
       });
       return;
     }
@@ -51,6 +54,7 @@ const Form = (props) => {
     // Clear input data
     nameInputRef.current.value = "";
     AgeInputRef.current.value = "";
+    collegeInputRef.current.value="";
   };
 
   return (
@@ -78,6 +82,10 @@ const Form = (props) => {
             type="number"
             /*value={inputAge} onChange={ageHandler}*/ ref={AgeInputRef}
           ></input>
+          <br />
+          <label>College Name</label>
+          <br />
+          <input type="text" ref={collegeInputRef}></input>
           <br />
           <button onClick={getDataHandler}>Add Users</button>
         </form>

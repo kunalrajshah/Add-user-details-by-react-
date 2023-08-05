@@ -16,7 +16,7 @@ const Output = (props) => {
             <ul>
               {props.send.map((data, index) => (
                 <li  key={index} onClick={()=>deleteHandler(index)}>
-                  {data.name} ({data.age} years old)
+                  {data.name} ({data.age} years old) {data.college}
                 </li>
               ))}
             </ul>
